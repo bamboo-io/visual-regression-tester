@@ -1,0 +1,382 @@
+[
+  {
+    "route": "/",
+    "name": "homepage",
+    "viewport": "desktop",
+    "figmaNodeId": "6203:56091",
+    "similarity": 89,
+    "diffPixels": 1247271,
+    "width": 1440,
+    "height": 7865
+  },
+  {
+    "route": "/features",
+    "name": "features",
+    "viewport": "desktop",
+    "figmaNodeId": "1237:23491",
+    "similarity": 87.8,
+    "diffPixels": 1631465,
+    "width": 1440,
+    "height": 9256
+  },
+  {
+    "route": "/features/round-ups",
+    "name": "features-roundups",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:14644",
+    "similarity": 90.3,
+    "diffPixels": 941805,
+    "width": 1440,
+    "height": 6748
+  },
+  {
+    "route": "/features/top-ups",
+    "name": "features-topups",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:20886",
+    "similarity": 89.6,
+    "diffPixels": 1015630,
+    "width": 1440,
+    "height": 6755
+  },
+  {
+    "route": "/features/portfolio",
+    "name": "features-portfolio",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:23611",
+    "similarity": 90.4,
+    "diffPixels": 945039,
+    "width": 1440,
+    "height": 6851
+  },
+  {
+    "route": "/features/dollar-cost-average",
+    "name": "features-dca",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:25021",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/features/bam-rewards",
+    "name": "features-bamrewards",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:26431",
+    "similarity": 90.7,
+    "diffPixels": 906836,
+    "width": 1440,
+    "height": 6753
+  },
+  {
+    "route": "/features/rebalance",
+    "name": "features-rebalance",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:27841",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/smsf",
+    "name": "smsf",
+    "viewport": "desktop",
+    "figmaNodeId": "1243:29251",
+    "similarity": 91.1,
+    "diffPixels": 1035565,
+    "width": 1440,
+    "height": 8082
+  },
+  {
+    "route": "/fees",
+    "name": "fees",
+    "viewport": "desktop",
+    "figmaNodeId": "1373:70451",
+    "similarity": 90.6,
+    "diffPixels": 412292,
+    "width": 1440,
+    "height": 3057
+  },
+  {
+    "route": "/security",
+    "name": "security",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:120174",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/waitlist",
+    "name": "waitlist",
+    "viewport": "desktop",
+    "figmaNodeId": "1247:35948",
+    "similarity": 88.6,
+    "diffPixels": 999788,
+    "width": 1440,
+    "height": 6082
+  },
+  {
+    "route": "/faq",
+    "name": "faq",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:124158",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/support",
+    "name": "support",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:125621",
+    "similarity": 88.8,
+    "diffPixels": 358289,
+    "width": 1440,
+    "height": 2227
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:129336",
+    "similarity": 86.9,
+    "diffPixels": 867647,
+    "width": 1440,
+    "height": 4608
+  },
+  {
+    "route": "/team",
+    "name": "team",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:130264",
+    "similarity": 80.9,
+    "diffPixels": 762679,
+    "width": 1440,
+    "height": 2779
+  },
+  {
+    "route": "/crypto-curious-podcast",
+    "name": "podcast",
+    "viewport": "desktop",
+    "figmaNodeId": "1244:128408",
+    "similarity": 73.6,
+    "diffPixels": 2029237,
+    "width": 1440,
+    "height": 5334
+  },
+  {
+    "route": "/blog",
+    "name": "blog",
+    "viewport": "desktop",
+    "figmaNodeId": "1250:57411",
+    "similarity": 77,
+    "diffPixels": 1290198,
+    "width": 1440,
+    "height": 3892
+  },
+  {
+    "route": "/partners",
+    "name": "partners",
+    "viewport": "desktop",
+    "figmaNodeId": "1250:66823",
+    "similarity": 83.7,
+    "diffPixels": 1702173,
+    "width": 1440,
+    "height": 7248
+  },
+  {
+    "route": "/",
+    "name": "homepage",
+    "viewport": "mobile",
+    "figmaNodeId": "6207:89967",
+    "similarity": 79.3,
+    "diffPixels": 683030,
+    "width": 375,
+    "height": 8790
+  },
+  {
+    "route": "/features",
+    "name": "features",
+    "viewport": "mobile",
+    "figmaNodeId": "1242:13910",
+    "similarity": 76.5,
+    "diffPixels": 887559,
+    "width": 375,
+    "height": 10074
+  },
+  {
+    "route": "/features/round-ups",
+    "name": "features-roundups",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:14658",
+    "similarity": 84.7,
+    "diffPixels": 434699,
+    "width": 375,
+    "height": 7571
+  },
+  {
+    "route": "/features/top-ups",
+    "name": "features-topups",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:20896",
+    "similarity": 81.2,
+    "diffPixels": 533633,
+    "width": 375,
+    "height": 7564
+  },
+  {
+    "route": "/features/portfolio",
+    "name": "features-portfolio",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:23622",
+    "similarity": 82.3,
+    "diffPixels": 519972,
+    "width": 375,
+    "height": 7826
+  },
+  {
+    "route": "/features/dollar-cost-average",
+    "name": "features-dca",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:25032",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/features/bam-rewards",
+    "name": "features-bamrewards",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:26442",
+    "similarity": 80.8,
+    "diffPixels": 530590,
+    "width": 375,
+    "height": 7362
+  },
+  {
+    "route": "/features/rebalance",
+    "name": "features-rebalance",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:27852",
+    "similarity": 81.6,
+    "diffPixels": 508254,
+    "width": 375,
+    "height": 7360
+  },
+  {
+    "route": "/smsf",
+    "name": "smsf",
+    "viewport": "mobile",
+    "figmaNodeId": "1243:29262",
+    "similarity": 82.2,
+    "diffPixels": 653562,
+    "width": 375,
+    "height": 9798
+  },
+  {
+    "route": "/fees",
+    "name": "fees",
+    "viewport": "mobile",
+    "figmaNodeId": "1373:70454",
+    "similarity": 85.2,
+    "diffPixels": 205348,
+    "width": 375,
+    "height": 3705
+  },
+  {
+    "route": "/security",
+    "name": "security",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:120187",
+    "similarity": 81.9,
+    "diffPixels": 460866,
+    "width": 375,
+    "height": 6806
+  },
+  {
+    "route": "/waitlist",
+    "name": "waitlist",
+    "viewport": "mobile",
+    "figmaNodeId": "1247:35955",
+    "similarity": 81,
+    "diffPixels": 513966,
+    "width": 375,
+    "height": 7210
+  },
+  {
+    "route": "/faq",
+    "name": "faq",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:124168",
+    "similarity": 86.6,
+    "diffPixels": 137743,
+    "width": 375,
+    "height": 2736
+  },
+  {
+    "route": "/support",
+    "name": "support",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:125628",
+    "similarity": 81.8,
+    "diffPixels": 178925,
+    "width": 375,
+    "height": 2626
+  },
+  {
+    "route": "/about",
+    "name": "about",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:129343",
+    "similarity": 75,
+    "diffPixels": 428994,
+    "width": 375,
+    "height": 4567
+  },
+  {
+    "route": "/team",
+    "name": "team",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:130271",
+    "similarity": 68.8,
+    "diffPixels": 451096,
+    "width": 375,
+    "height": 3859
+  },
+  {
+    "route": "/crypto-curious-podcast",
+    "name": "podcast",
+    "viewport": "mobile",
+    "figmaNodeId": "1244:128415",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
+  },
+  {
+    "route": "/blog",
+    "name": "blog",
+    "viewport": "mobile",
+    "figmaNodeId": "1250:57418",
+    "similarity": 60.7,
+    "diffPixels": 602146,
+    "width": 375,
+    "height": 4087
+  },
+  {
+    "route": "/partners",
+    "name": "partners",
+    "viewport": "mobile",
+    "figmaNodeId": "1250:66830",
+    "similarity": 75.3,
+    "diffPixels": 723038,
+    "width": 375,
+    "height": 7801
+  }
+]
