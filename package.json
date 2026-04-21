@@ -8,7 +8,7 @@
     "report": "node generate-report.js"
   },
   "dependencies": {
-    "jimp": "^0.22.10",
+    "jimp": "^1.6.1",
     "pdfkit": "^0.13.0",
     "pixelmatch": "^7.1.0",
     "playwright": "^1.59.1",
