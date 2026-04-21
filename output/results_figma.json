@@ -4,370 +4,374 @@
     "name": "homepage",
     "viewport": "desktop",
     "figmaNodeId": "6203:56091",
-    "similarity": 89.1,
-    "diffPixels": 1232552,
+    "similarity": 89.3,
+    "diffPixels": 1233987,
     "width": 1440,
-    "height": 7865
+    "height": 7999
   },
   {
     "route": "/features",
     "name": "features",
     "viewport": "desktop",
     "figmaNodeId": "1237:23491",
-    "similarity": 92.9,
-    "diffPixels": 941381,
+    "similarity": 93.1,
+    "diffPixels": 941987,
     "width": 1440,
-    "height": 9256
+    "height": 9415
   },
   {
     "route": "/features/round-ups",
     "name": "features-roundups",
     "viewport": "desktop",
     "figmaNodeId": "1243:14644",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 95,
+    "diffPixels": 498791,
+    "width": 1440,
+    "height": 6940
   },
   {
     "route": "/features/top-ups",
     "name": "features-topups",
     "viewport": "desktop",
     "figmaNodeId": "1243:20886",
-    "similarity": 92.8,
-    "diffPixels": 695711,
-    "width": 1440,
-    "height": 6755
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
   },
   {
     "route": "/features/portfolio",
     "name": "features-portfolio",
     "viewport": "desktop",
     "figmaNodeId": "1243:23611",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 93.8,
+    "diffPixels": 630883,
+    "width": 1440,
+    "height": 7022
   },
   {
     "route": "/features/dollar-cost-average",
     "name": "features-dca",
     "viewport": "desktop",
     "figmaNodeId": "1243:25021",
-    "similarity": 93.5,
-    "diffPixels": 642278,
-    "width": 1440,
-    "height": 6877
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
   },
   {
     "route": "/features/bam-rewards",
     "name": "features-bamrewards",
     "viewport": "desktop",
     "figmaNodeId": "1243:26431",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 94.5,
+    "diffPixels": 550075,
+    "width": 1440,
+    "height": 6909
   },
   {
     "route": "/features/rebalance",
     "name": "features-rebalance",
     "viewport": "desktop",
     "figmaNodeId": "1243:27841",
-    "similarity": 94.8,
-    "diffPixels": 506679,
+    "similarity": 94.9,
+    "diffPixels": 507285,
     "width": 1440,
-    "height": 6753
+    "height": 6909
   },
   {
     "route": "/smsf",
     "name": "smsf",
     "viewport": "desktop",
     "figmaNodeId": "1243:29251",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 92.4,
+    "diffPixels": 909259,
+    "width": 1440,
+    "height": 8265
   },
   {
     "route": "/fees",
     "name": "fees",
     "viewport": "desktop",
     "figmaNodeId": "1373:70451",
-    "similarity": 95.6,
-    "diffPixels": 194472,
+    "similarity": 95.7,
+    "diffPixels": 206417,
     "width": 1440,
-    "height": 3057
+    "height": 3368
   },
   {
     "route": "/security",
     "name": "security",
     "viewport": "desktop",
     "figmaNodeId": "1244:120174",
-    "similarity": 89.1,
-    "diffPixels": 832449,
-    "width": 1440,
-    "height": 5280
-  },
-  {
-    "route": "/waitlist",
-    "name": "waitlist",
-    "viewport": "desktop",
-    "figmaNodeId": "1247:35948",
     "similarity": null,
     "diffPixels": 0,
     "width": 0,
     "height": 0
   },
   {
+    "route": "/waitlist",
+    "name": "waitlist",
+    "viewport": "desktop",
+    "figmaNodeId": "1247:35948",
+    "similarity": 89.9,
+    "diffPixels": 924662,
+    "width": 1440,
+    "height": 6338
+  },
+  {
     "route": "/faq",
     "name": "faq",
     "viewport": "desktop",
     "figmaNodeId": "1244:124158",
-    "similarity": 96.5,
-    "diffPixels": 122582,
+    "similarity": 96.7,
+    "diffPixels": 145903,
     "width": 1440,
-    "height": 2434
+    "height": 3045
   },
   {
     "route": "/support",
     "name": "support",
     "viewport": "desktop",
     "figmaNodeId": "1244:125621",
-    "similarity": 95.6,
-    "diffPixels": 141540,
+    "similarity": 96,
+    "diffPixels": 144337,
     "width": 1440,
-    "height": 2227
+    "height": 2520
   },
   {
     "route": "/about",
     "name": "about",
     "viewport": "desktop",
     "figmaNodeId": "1244:129336",
-    "similarity": 79.7,
+    "similarity": 79.9,
     "diffPixels": 1349731,
     "width": 1440,
-    "height": 4608
+    "height": 4660
   },
   {
     "route": "/team",
     "name": "team",
     "viewport": "desktop",
     "figmaNodeId": "1244:130264",
-    "similarity": 88.5,
-    "diffPixels": 459349,
+    "similarity": 89.4,
+    "diffPixels": 461029,
     "width": 1440,
-    "height": 2779
+    "height": 3029
   },
   {
     "route": "/crypto-curious-podcast",
     "name": "podcast",
     "viewport": "desktop",
     "figmaNodeId": "1244:128408",
-    "similarity": 81,
-    "diffPixels": 1458024,
+    "similarity": 81.8,
+    "diffPixels": 1459704,
     "width": 1440,
-    "height": 5334
+    "height": 5564
   },
   {
     "route": "/blog",
     "name": "blog",
     "viewport": "desktop",
     "figmaNodeId": "1250:57411",
-    "similarity": 82.7,
-    "diffPixels": 969553,
-    "width": 1440,
-    "height": 3892
+    "skipped": true,
+    "reason": "Dynamic content — excluded from comparison",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
   },
   {
     "route": "/partners",
     "name": "partners",
     "viewport": "desktop",
     "figmaNodeId": "1250:66823",
-    "similarity": 86.8,
-    "diffPixels": 1374878,
+    "similarity": 87.3,
+    "diffPixels": 1395876,
     "width": 1440,
-    "height": 7248
+    "height": 7639
   },
   {
     "route": "/",
     "name": "homepage",
     "viewport": "mobile",
     "figmaNodeId": "6207:89967",
-    "similarity": 80.5,
-    "diffPixels": 643788,
+    "similarity": 81.2,
+    "diffPixels": 653473,
     "width": 375,
-    "height": 8790
+    "height": 9271
   },
   {
     "route": "/features",
     "name": "features",
     "viewport": "mobile",
     "figmaNodeId": "1242:13910",
-    "similarity": 81.3,
-    "diffPixels": 708139,
+    "similarity": 82.2,
+    "diffPixels": 718604,
     "width": 375,
-    "height": 10074
+    "height": 10752
   },
   {
     "route": "/features/round-ups",
     "name": "features-roundups",
     "viewport": "mobile",
     "figmaNodeId": "1243:14658",
-    "similarity": 86.6,
-    "diffPixels": 379903,
+    "similarity": 87.1,
+    "diffPixels": 389663,
     "width": 375,
-    "height": 7571
+    "height": 8067
   },
   {
     "route": "/features/top-ups",
     "name": "features-topups",
     "viewport": "mobile",
     "figmaNodeId": "1243:20896",
-    "similarity": 81.6,
-    "diffPixels": 523207,
-    "width": 375,
-    "height": 7564
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
   },
   {
     "route": "/features/portfolio",
     "name": "features-portfolio",
     "viewport": "mobile",
     "figmaNodeId": "1243:23622",
-    "similarity": 85.3,
-    "diffPixels": 430849,
+    "similarity": 86.1,
+    "diffPixels": 441136,
     "width": 375,
-    "height": 7826
+    "height": 8462
   },
   {
     "route": "/features/dollar-cost-average",
     "name": "features-dca",
     "viewport": "mobile",
     "figmaNodeId": "1243:25032",
-    "similarity": 84.5,
-    "diffPixels": 441055,
+    "similarity": 85.5,
+    "diffPixels": 451522,
     "width": 375,
-    "height": 7601
+    "height": 8279
   },
   {
     "route": "/features/bam-rewards",
     "name": "features-bamrewards",
     "viewport": "mobile",
     "figmaNodeId": "1243:26442",
-    "similarity": 83.9,
-    "diffPixels": 444360,
+    "similarity": 84.8,
+    "diffPixels": 454651,
     "width": 375,
-    "height": 7362
+    "height": 7995
   },
   {
     "route": "/features/rebalance",
     "name": "features-rebalance",
     "viewport": "mobile",
     "figmaNodeId": "1243:27852",
-    "similarity": 87.3,
-    "diffPixels": 351736,
+    "similarity": 87.8,
+    "diffPixels": 361755,
     "width": 375,
-    "height": 7360
+    "height": 7928
   },
   {
     "route": "/smsf",
     "name": "smsf",
     "viewport": "mobile",
     "figmaNodeId": "1243:29262",
-    "similarity": 84.6,
-    "diffPixels": 565331,
+    "similarity": 85.5,
+    "diffPixels": 577387,
     "width": 375,
-    "height": 9798
+    "height": 10638
   },
   {
     "route": "/fees",
     "name": "fees",
     "viewport": "mobile",
     "figmaNodeId": "1373:70454",
-    "similarity": 89,
-    "diffPixels": 152495,
+    "similarity": 89.6,
+    "diffPixels": 154111,
     "width": 375,
-    "height": 3705
+    "height": 3935
   },
   {
     "route": "/security",
     "name": "security",
     "viewport": "mobile",
     "figmaNodeId": "1244:120187",
-    "similarity": 83.7,
+    "similarity": 83.8,
     "diffPixels": 414898,
     "width": 375,
-    "height": 6806
+    "height": 6849
   },
   {
     "route": "/waitlist",
     "name": "waitlist",
     "viewport": "mobile",
     "figmaNodeId": "1247:35955",
-    "similarity": 88.9,
-    "diffPixels": 300536,
+    "similarity": 89.2,
+    "diffPixels": 302153,
     "width": 375,
-    "height": 7210
+    "height": 7493
   },
   {
     "route": "/faq",
     "name": "faq",
     "viewport": "mobile",
     "figmaNodeId": "1244:124168",
-    "similarity": 92.6,
-    "diffPixels": 76009,
+    "similarity": 92.3,
+    "diffPixels": 97471,
     "width": 375,
-    "height": 2736
+    "height": 3362
   },
   {
     "route": "/support",
     "name": "support",
     "viewport": "mobile",
     "figmaNodeId": "1244:125628",
-    "similarity": 88,
-    "diffPixels": 117959,
+    "similarity": 88.9,
+    "diffPixels": 119576,
     "width": 375,
-    "height": 2626
+    "height": 2879
   },
   {
     "route": "/about",
     "name": "about",
     "viewport": "mobile",
     "figmaNodeId": "1244:129343",
-    "similarity": 70.8,
+    "similarity": 71.2,
     "diffPixels": 499614,
     "width": 375,
-    "height": 4567
+    "height": 4628
   },
   {
     "route": "/team",
     "name": "team",
     "viewport": "mobile",
     "figmaNodeId": "1244:130271",
-    "similarity": 80.5,
-    "diffPixels": 282782,
+    "similarity": 81.9,
+    "diffPixels": 286402,
     "width": 375,
-    "height": 3859
+    "height": 4220
   },
   {
     "route": "/crypto-curious-podcast",
     "name": "podcast",
     "viewport": "mobile",
     "figmaNodeId": "1244:128415",
-    "similarity": 74.6,
-    "diffPixels": 939668,
+    "similarity": 75.3,
+    "diffPixels": 960832,
     "width": 375,
-    "height": 9851
+    "height": 10394
   },
   {
     "route": "/blog",
     "name": "blog",
     "viewport": "mobile",
     "figmaNodeId": "1250:57418",
-    "similarity": 68,
-    "diffPixels": 490382,
-    "width": 375,
-    "height": 4087
+    "skipped": true,
+    "reason": "Dynamic content — excluded from comparison",
+    "similarity": null,
+    "diffPixels": 0,
+    "width": 0,
+    "height": 0
   },
   {
     "route": "/partners",

@@ -1,6 +1,7 @@
 const { chromium } = require('playwright');
 const { PNG } = require('pngjs');
 const pixelmatch = require('pixelmatch').default;
+const sharp = require('sharp');
 const fs = require('fs');
 const path = require('path');
 const https = require('https');
@@ -9,6 +10,9 @@ const https = require('https');
 const FIGMA_TOKEN = process.env.FIGMA_TOKEN || '';
 const FIGMA_FILE_KEY = '554StoW7TcFht2zUoHVwL0';
 const LIVE_URL = 'https://www.getbamboo.io';
+
+// Routes to skip (dynamic content — meaningless diffs)
+const SKIP_ROUTES = ['/blog'];
 
 // Hardcoded frame map: discovered from Figma API
 // Each entry: { id, name, viewport, route, width, height }
@@ -75,22 +79,47 @@ fs.mkdirSync(DIFFS_DIR, { recursive: true });
 
 // ── Helpers ──
 
-function resizePNG(png, targetW, targetH) {
-  const out = new PNG({ width: targetW, height: targetH });
-  out.data.fill(255);
-  const copyW = Math.min(png.width, targetW);
-  const copyH = Math.min(png.height, targetH);
-  for (let y = 0; y < copyH; y++) {
-    for (let x = 0; x < copyW; x++) {
-      const si = (y * png.width + x) * 4;
-      const di = (y * targetW + x) * 4;
-      out.data[di] = png.data[si];
-      out.data[di + 1] = png.data[si + 1];
-      out.data[di + 2] = png.data[si + 2];
-      out.data[di + 3] = png.data[si + 3];
-    }
+/**
+ * Resize both images to a common width (Figma frame width) using sharp with
+ * lanczos3 kernel for high-quality bicubic resampling. If heights differ after
+ * resize, pad the shorter image with white to match.
+ */
+async function resizeToCommon(figmaPath, livePath, targetWidth) {
+  // Resize Figma image to target width, maintain aspect ratio
+  let figmaBuf = await sharp(figmaPath)
+    .resize({ width: targetWidth, kernel: sharp.kernel.lanczos3 })
+    .png()
+    .toBuffer();
+  let figmaMeta = await sharp(figmaBuf).metadata();
+
+  // Resize live image to target width, maintain aspect ratio
+  let liveBuf = await sharp(livePath)
+    .resize({ width: targetWidth, kernel: sharp.kernel.lanczos3 })
+    .png()
+    .toBuffer();
+  let liveMeta = await sharp(liveBuf).metadata();
+
+  const commonH = Math.max(figmaMeta.height, liveMeta.height);
+
+  // Pad shorter image with white at the bottom
+  if (figmaMeta.height < commonH) {
+    figmaBuf = await sharp(figmaBuf)
+      .extend({ bottom: commonH - figmaMeta.height, background: { r: 255, g: 255, b: 255, alpha: 1 } })
+      .png()
+      .toBuffer();
   }
-  return out;
+  if (liveMeta.height < commonH) {
+    liveBuf = await sharp(liveBuf)
+      .extend({ bottom: commonH - liveMeta.height, background: { r: 255, g: 255, b: 255, alpha: 1 } })
+      .png()
+      .toBuffer();
+  }
+
+  // Write resized versions back
+  fs.writeFileSync(figmaPath, figmaBuf);
+  fs.writeFileSync(livePath, liveBuf);
+
+  return { width: targetWidth, height: commonH };
 }
 
 function figmaGet(urlPath) {
@@ -171,24 +200,18 @@ async function capture(page, url, filePath) {
   }
 }
 
-function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
-  let img1 = PNG.sync.read(fs.readFileSync(img1Path));
-  let img2 = PNG.sync.read(fs.readFileSync(img2Path));
+async function diffImages(figmaPath, livePath, diffPath, targetWidth) {
+  // Resize both images to common dimensions using sharp (lanczos3)
+  const { width: w, height: h } = await resizeToCommon(figmaPath, livePath, targetWidth);
 
-  const w = targetW;
-  const h = targetH;
-
-  // Resize both to target dimensions
-  if (img1.width !== w || img1.height !== h) img1 = resizePNG(img1, w, h);
-  if (img2.width !== w || img2.height !== h) img2 = resizePNG(img2, w, h);
+  // Read back the resized PNGs for pixelmatch
+  const img1 = PNG.sync.read(fs.readFileSync(figmaPath));
+  const img2 = PNG.sync.read(fs.readFileSync(livePath));
 
   const diff = new PNG({ width: w, height: h });
   const diffPixels = pixelmatch(img1.data, img2.data, diff.data, w, h, { threshold: 0.1 });
 
   fs.writeFileSync(diffPath, PNG.sync.write(diff));
-  // Also write the resized versions
-  fs.writeFileSync(img1Path, PNG.sync.write(img1));
-  fs.writeFileSync(img2Path, PNG.sync.write(img2));
 
   const total = w * h;
   const similarity = parseFloat(((total - diffPixels) / total * 100).toFixed(1));
@@ -202,12 +225,14 @@ function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
   console.log('=====================================================\n');
 
   // Step 1: Export all Figma frames (batch by groups of 10 to avoid URL length limits)
+  // Skip blog frames from Figma export too
+  const framesToExport = FRAMES.filter(f => !SKIP_ROUTES.includes(f.route));
   console.log('📦 Exporting frames from Figma...');
   const batchSize = 10;
   const figmaImageUrls = {};
 
-  for (let i = 0; i < FRAMES.length; i += batchSize) {
-    const batch = FRAMES.slice(i, i + batchSize);
+  for (let i = 0; i < framesToExport.length; i += batchSize) {
+    const batch = framesToExport.slice(i, i + batchSize);
     const ids = batch.map((f) => f.id).join(',');
     const resp = await figmaGet(`/v1/images/${FIGMA_FILE_KEY}?ids=${encodeURIComponent(ids)}&format=png&scale=1`);
 
@@ -219,7 +244,7 @@ function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
     for (const [nodeId, url] of Object.entries(resp.images || {})) {
       if (url) figmaImageUrls[nodeId] = url;
     }
-    console.log(`  Exported batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(FRAMES.length / batchSize)} (${Object.keys(figmaImageUrls).length} images so far)`);
+    console.log(`  Exported batch ${Math.floor(i / batchSize) + 1}/${Math.ceil(framesToExport.length / batchSize)} (${Object.keys(figmaImageUrls).length} images so far)`);
   }
 
   console.log(`\n✅ Got ${Object.keys(figmaImageUrls).length} Figma exports\n`);
@@ -239,6 +264,17 @@ function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
     const page = await context.newPage();
 
     for (const frame of vpFrames) {
+      // Skip blog (dynamic content)
+      if (SKIP_ROUTES.includes(frame.route)) {
+        console.log(`${frame.name} (${frame.viewport})... SKIPPED (dynamic content)`);
+        results.push({
+          route: frame.route, name: frame.name, viewport: frame.viewport,
+          figmaNodeId: frame.id, skipped: true, reason: 'Dynamic content — excluded from comparison',
+          similarity: null, diffPixels: 0, width: 0, height: 0,
+        });
+        continue;
+      }
+
       const label = `${frame.name}_${frame.viewport}`;
       const figmaFile = path.join(SHOTS_DIR, `figma_${label}.png`);
       const liveFile = path.join(SHOTS_DIR, `live_${label}.png`);
@@ -264,12 +300,7 @@ function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
       const liveOk = await capture(page, LIVE_URL + frame.route, liveFile);
 
       if (figmaOk && liveOk) {
-        // Read Figma image to get actual exported dimensions
-        const figmaPng = PNG.sync.read(fs.readFileSync(figmaFile));
-        const targetW = figmaPng.width;
-        const targetH = figmaPng.height;
-
-        const { diffPixels, similarity, width, height } = diffImages(figmaFile, liveFile, diffFile, targetW, targetH);
+        const { diffPixels, similarity, width, height } = await diffImages(figmaFile, liveFile, diffFile, frame.width);
         console.log(`${similarity}% (${diffPixels} diff pixels, ${width}x${height})`);
         results.push({
           route: frame.route, name: frame.name, viewport: frame.viewport,
@@ -293,4 +324,5 @@ function diffImages(img1Path, img2Path, diffPath, targetW, targetH) {
   fs.writeFileSync(resultsPath, JSON.stringify(results, null, 2));
   console.log(`\n\n✅ Done. Results saved to ${resultsPath}`);
   console.log(`   ${results.filter((r) => r.similarity !== null).length} comparisons completed`);
+  console.log(`   ${results.filter((r) => r.skipped).length} skipped (dynamic content)`);
 })();
