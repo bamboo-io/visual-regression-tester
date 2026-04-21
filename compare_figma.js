@@ -129,10 +129,40 @@ function downloadFile(url, dest) {
   });
 }
 
+async function dismissOverlays(page) {
+  await page.evaluate(() => {
+    // 1. Top announcement/promo banner (#dca-report-banner)
+    const dcaBanner = document.getElementById('dca-report-banner');
+    if (dcaBanner) dcaBanner.style.display = 'none';
+
+    // 2. Cookie consent popup (.CookieConsent)
+    document.querySelectorAll('.CookieConsent, [class*="CookieConsent"], [class*="cookie-consent"]').forEach(el => {
+      el.style.display = 'none';
+    });
+
+    // 3. Geo-location waitlist banner (WaitingListBanner)
+    document.querySelectorAll('[class*="WaitingListBanner"], [class*="waitlist-banner"]').forEach(el => {
+      el.style.display = 'none';
+    });
+
+    // 4. BDOW popup button (if any)
+    document.querySelectorAll('button').forEach(el => {
+      if (el.textContent?.trim() === 'BDOW!') el.style.display = 'none';
+    });
+
+    // 5. Adjust sticky header position — the banner pushes it down ~52px
+    document.querySelectorAll('[class*="Header-module--header"]').forEach(el => {
+      el.style.top = '0px';
+    });
+  });
+}
+
 async function capture(page, url, filePath) {
   try {
     await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
     await page.waitForTimeout(2000);
+    await dismissOverlays(page);
+    await page.waitForTimeout(500);
     await page.screenshot({ path: filePath, fullPage: true });
     return true;
   } catch (e) {
