@@ -1,0 +1,266 @@
+[
+  {
+    "name": "homepage",
+    "viewport": "desktop",
+    "similarity": 90.2,
+    "route": "/"
+  },
+  {
+    "name": "about",
+    "viewport": "desktop",
+    "similarity": 73.5,
+    "route": "/about"
+  },
+  {
+    "name": "features",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features"
+  },
+  {
+    "name": "features-portfolio",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/portfolio"
+  },
+  {
+    "name": "features-rebalance",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/rebalance"
+  },
+  {
+    "name": "features-round-ups",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/round-ups"
+  },
+  {
+    "name": "features-top-ups",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/top-ups"
+  },
+  {
+    "name": "features-bam-rewards",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/bam-rewards"
+  },
+  {
+    "name": "features-dca",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/features/dollar-cost-average"
+  },
+  {
+    "name": "fees",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/fees"
+  },
+  {
+    "name": "faq",
+    "viewport": "desktop",
+    "similarity": 96.9,
+    "route": "/faq"
+  },
+  {
+    "name": "security",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/security"
+  },
+  {
+    "name": "team",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/team"
+  },
+  {
+    "name": "blog",
+    "viewport": "desktop",
+    "similarity": 84.0,
+    "route": "/blog"
+  },
+  {
+    "name": "podcast",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/crypto-curious-podcast"
+  },
+  {
+    "name": "partners",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/partners"
+  },
+  {
+    "name": "smsf",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/smsf"
+  },
+  {
+    "name": "support",
+    "viewport": "desktop",
+    "similarity": null,
+    "route": "/support"
+  },
+  {
+    "name": "invest",
+    "viewport": "desktop",
+    "similarity": 88.4,
+    "route": "/invest"
+  },
+  {
+    "name": "gold-silver",
+    "viewport": "desktop",
+    "similarity": 93.0,
+    "route": "/gold-silver"
+  },
+  {
+    "name": "bitcoin-ethereum",
+    "viewport": "desktop",
+    "similarity": 92.8,
+    "route": "/bitcoin-ethereum"
+  },
+  {
+    "name": "waitlist",
+    "viewport": "desktop",
+    "similarity": 93.8,
+    "route": "/waitlist"
+  },
+  {
+    "name": "homepage",
+    "viewport": "mobile",
+    "similarity": 88.8,
+    "route": "/"
+  },
+  {
+    "name": "about",
+    "viewport": "mobile",
+    "similarity": 79.0,
+    "route": "/about"
+  },
+  {
+    "name": "features",
+    "viewport": "mobile",
+    "similarity": 81.8,
+    "route": "/features"
+  },
+  {
+    "name": "features-portfolio",
+    "viewport": "mobile",
+    "similarity": 86.1,
+    "route": "/features/portfolio"
+  },
+  {
+    "name": "features-rebalance",
+    "viewport": "mobile",
+    "similarity": 86.5,
+    "route": "/features/rebalance"
+  },
+  {
+    "name": "features-round-ups",
+    "viewport": "mobile",
+    "similarity": 86.5,
+    "route": "/features/round-ups"
+  },
+  {
+    "name": "features-top-ups",
+    "viewport": "mobile",
+    "similarity": 85.8,
+    "route": "/features/top-ups"
+  },
+  {
+    "name": "features-bam-rewards",
+    "viewport": "mobile",
+    "similarity": 85.1,
+    "route": "/features/bam-rewards"
+  },
+  {
+    "name": "features-dca",
+    "viewport": "mobile",
+    "similarity": 86.6,
+    "route": "/features/dollar-cost-average"
+  },
+  {
+    "name": "fees",
+    "viewport": "mobile",
+    "similarity": 90.5,
+    "route": "/fees"
+  },
+  {
+    "name": "faq",
+    "viewport": "mobile",
+    "similarity": 92.8,
+    "route": "/faq"
+  },
+  {
+    "name": "security",
+    "viewport": "mobile",
+    "similarity": 88.7,
+    "route": "/security"
+  },
+  {
+    "name": "team",
+    "viewport": "mobile",
+    "similarity": 80.0,
+    "route": "/team"
+  },
+  {
+    "name": "blog",
+    "viewport": "mobile",
+    "similarity": 74.4,
+    "route": "/blog"
+  },
+  {
+    "name": "podcast",
+    "viewport": "mobile",
+    "similarity": 74.2,
+    "route": "/crypto-curious-podcast"
+  },
+  {
+    "name": "partners",
+    "viewport": "mobile",
+    "similarity": 65.2,
+    "route": "/partners"
+  },
+  {
+    "name": "smsf",
+    "viewport": "mobile",
+    "similarity": 86.3,
+    "route": "/smsf"
+  },
+  {
+    "name": "support",
+    "viewport": "mobile",
+    "similarity": 89.7,
+    "route": "/support"
+  },
+  {
+    "name": "invest",
+    "viewport": "mobile",
+    "similarity": 84.9,
+    "route": "/invest"
+  },
+  {
+    "name": "gold-silver",
+    "viewport": "mobile",
+    "similarity": 84.8,
+    "route": "/gold-silver"
+  },
+  {
+    "name": "bitcoin-ethereum",
+    "viewport": "mobile",
+    "similarity": 84.8,
+    "route": "/bitcoin-ethereum"
+  },
+  {
+    "name": "waitlist",
+    "viewport": "mobile",
+    "similarity": null,
+    "route": "/waitlist"
+  }
+]

@@ -1,0 +1,53 @@
+# Bug Analysis — Complete
+Generated: 2026-04-16
+
+## What was built
+
+### analyse.js
+Node.js script that performs three-layer analysis on every page/viewport scoring <90%:
+1. Region diff analysis — divides diff PNGs into 5 horizontal bands (nav/hero/content/pre-footer/footer), counts red diff pixels, flags bands with >15% density
+2. DOM structure diff — uses Playwright to visit both old and new sites, extracts headings/nav links/CTAs/images/section counts, reports missing or changed elements
+3. CSS style diff — extracts computed styles (h1, h2, nav, button, body) from both sites, flags mismatches
+
+### build_bug_report.js
+Generates a dark-themed HTML report and A3 landscape PDF from bugs.json.
+- Summary stats with severity and fix-tag breakdowns
+- Per-page issue tables sorted by severity
+- Quick Wins section listing all AI-fixable issues
+
+## Output files
+- output/bugs.json — 293 issues across 22 page/viewport combinations (110KB)
+- output/bug-report.html — visual report (220KB)
+- output/bug-report.pdf — printable PDF (714KB)
+
+## Key findings
+
+### Issue breakdown
+- Total: 293 issues
+- High severity: 69 (missing CTAs, headings, >30% region diff)
+- Medium severity: 125 (missing nav links, images, 15-30% region diff)
+- Low severity: 99 (CSS style differences)
+
+### By fix tag
+- 👷 Dev required: 194 (structural/content changes)
+- 🎨 Design decision: 55 (colour/font changes — may be intentional)
+- 🤖 AI-fixable: 44 (CSS tweaks — font-size, border-radius, font-weight)
+
+### Worst pages (most degraded)
+1. partners (mobile): 65.2% — 14 issues
+2. about (desktop): 73.5% — 14 issues
+3. podcast (mobile): 74.2% — 20 issues
+4. blog (mobile): 74.4% — 18 issues
+5. about (mobile): 79.0% — 13 issues
+
+### Most affected regions
+- nav: 18 region-level issues (frequent layout changes in navigation)
+- hero: 18 region-level issues (hero sections often significantly different)
+- content: 8 region-level issues
+- pre-footer: 5 region-level issues
+
+### Notable patterns
+- Nav and hero bands are the most impacted across nearly all pages — suggests systematic navigation and hero layout changes in the new site
+- Most pages share common DOM diffs (nav links, CTAs like country selector) — likely a global nav component change
+- CSS diffs in font-family and color are consistent across pages — likely an intentional design system update
+- The 44 AI-fixable issues are all CSS property differences (font-size, font-weight, border-radius) that could be batch-fixed

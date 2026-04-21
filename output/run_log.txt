@@ -1,0 +1,53 @@
+
+=== desktop ===
+homepage (desktop)... 90.2%
+about (desktop)... 73.5%
+features (desktop)... 91.1%
+features-portfolio (desktop)... 93.5%
+features-rebalance (desktop)...   FAILED: https://bamboo-web-nextjs.netlify.app/features/rebalance - page.goto: Timeout 30000ms exceeded.
+SKIPPED
+features-round-ups (desktop)...   FAILED: https://bamboo-web-nextjs.netlify.app/features/round-ups - page.goto: Timeout 30000ms exceeded.
+SKIPPED
+features-top-ups (desktop)...   FAILED: https://bamboo-web-nextjs.netlify.app/features/top-ups - page.goto: Timeout 30000ms exceeded.
+SKIPPED
+features-bam-rewards (desktop)... 93%
+features-dca (desktop)... 93.5%
+fees (desktop)... 96.2%
+faq (desktop)... 96.9%
+security (desktop)... 91.6%
+team (desktop)... 92.6%
+blog (desktop)... 84%
+podcast (desktop)... 85.6%
+partners (desktop)... 89%
+smsf (desktop)... 92.4%
+support (desktop)... 96.3%
+invest (desktop)... 88.4%
+gold-silver (desktop)... 93%
+bitcoin-ethereum (desktop)... 92.8%
+waitlist (desktop)... 93.8%
+
+=== mobile ===
+homepage (mobile)... 88.8%
+about (mobile)... 79%
+features (mobile)... 81.8%
+features-portfolio (mobile)... 86.1%
+features-rebalance (mobile)... 86.5%
+features-round-ups (mobile)... 86.5%
+features-top-ups (mobile)... 85.8%
+features-bam-rewards (mobile)... 85.1%
+features-dca (mobile)... 86.6%
+fees (mobile)... 90.5%
+faq (mobile)... 92.8%
+security (mobile)... 88.7%
+team (mobile)... 80%
+blog (mobile)... 74.4%
+podcast (mobile)... 74.2%
+partners (mobile)... file:///Users/rentamac/workspace/visual-regression-tester/node_modules/pixelmatch/index.js:34
+        throw new Error('Image sizes do not match.');
+              ^
+
+Error: Image sizes do not match.
+    at pixelmatch (file:///Users/rentamac/workspace/visual-regression-tester/node_modules/pixelmatch/index.js:34:15)
+    at /Users/rentamac/workspace/visual-regression-tester/compare_full.js:102:22
+
+Node.js v25.6.1

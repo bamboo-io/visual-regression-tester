@@ -1,0 +1,2500 @@
+[
+  {
+    "page": "about",
+    "viewport": "desktop",
+    "similarity": 73.5,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "high",
+        "description": "nav band has 64.4% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in about page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 43.9% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in about page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 16.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in about page"
+      },
+      {
+        "type": "region_diff",
+        "region": "pre-footer",
+        "severity": "medium",
+        "description": "pre-footer band has 22.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review pre-footer section layout in about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to about"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to about"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for about"
+      }
+    ]
+  },
+  {
+    "page": "blog",
+    "viewport": "desktop",
+    "similarity": 84,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 24.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in blog page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 24.7% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '226 - Iran, Morgan Stanley, a $10M Fine & Jonno's back' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to blog page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '225 - Ceasefires, Scams & Quantum Chaos' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to blog page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 '220 - The $65K Test - Conspiracy, Congress & Cheap Bitcoin' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 '219 - Hassan Ahmed: The Man Scaling Coinbase Across Southeast Asia' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo post' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo post' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for blog"
+      }
+    ]
+  },
+  {
+    "page": "invest",
+    "viewport": "desktop",
+    "similarity": 88.4,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 32.8% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to invest"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to invest"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for invest"
+      }
+    ]
+  },
+  {
+    "page": "homepage",
+    "viewport": "mobile",
+    "similarity": 88.8,
+    "issues": [
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '226 - Iran, Morgan Stanley, a $10M Fine & Jonno's back' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to homepage page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '225 - Ceasefires, Scams & Quantum Chaos' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to homepage page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 'Protecting Your Purchasing Power When Everything Costs More' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on homepage"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 'This Week In Crypto – War Bets, Super Funds & AI Wallets' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on homepage"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to homepage page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to homepage page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo post' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo post' to homepage"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to homepage"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to homepage"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to homepage"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for homepage"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for homepage"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for homepage"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for homepage"
+      }
+    ]
+  },
+  {
+    "page": "about",
+    "viewport": "mobile",
+    "similarity": 79,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "high",
+        "description": "nav band has 53.2% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in about page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 31.5% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in about page"
+      },
+      {
+        "type": "region_diff",
+        "region": "pre-footer",
+        "severity": "medium",
+        "description": "pre-footer band has 17.0% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review pre-footer section layout in about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to about page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to about"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to about"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for about"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for about"
+      }
+    ]
+  },
+  {
+    "page": "features",
+    "viewport": "mobile",
+    "similarity": 81.8,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 25.8% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 20.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in features page"
+      },
+      {
+        "type": "region_diff",
+        "region": "pre-footer",
+        "severity": "medium",
+        "description": "pre-footer band has 15.3% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review pre-footer section layout in features page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features"
+      }
+    ]
+  },
+  {
+    "page": "features-portfolio",
+    "viewport": "mobile",
+    "similarity": 86.1,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 22.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-portfolio page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 19.5% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-portfolio page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-portfolio page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-portfolio page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-portfolio"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-portfolio"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-portfolio"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-portfolio"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-portfolio"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-portfolio"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-portfolio"
+      }
+    ]
+  },
+  {
+    "page": "features-rebalance",
+    "viewport": "mobile",
+    "similarity": 86.5,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 19.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-rebalance page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 19.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-rebalance page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-rebalance page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-rebalance page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-rebalance"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-rebalance"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-rebalance"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-rebalance"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-rebalance"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-rebalance"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-rebalance"
+      }
+    ]
+  },
+  {
+    "page": "features-round-ups",
+    "viewport": "mobile",
+    "similarity": 86.5,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 15.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-round-ups page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 21.0% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-round-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-round-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-round-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-round-ups"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-round-ups"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-round-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-round-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-round-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-round-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-round-ups"
+      }
+    ]
+  },
+  {
+    "page": "features-top-ups",
+    "viewport": "mobile",
+    "similarity": 85.8,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 19.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-top-ups page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 21.8% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-top-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-top-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-top-ups page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-top-ups"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-top-ups"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-top-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-top-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-top-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-top-ups"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-top-ups"
+      }
+    ]
+  },
+  {
+    "page": "features-bam-rewards",
+    "viewport": "mobile",
+    "similarity": 85.1,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 24.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-bam-rewards page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 22.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-bam-rewards page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-bam-rewards page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-bam-rewards page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bitcoin Stack' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bitcoin Stack' to features-bam-rewards"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-bam-rewards"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-bam-rewards"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-bam-rewards"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-bam-rewards"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-bam-rewards"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-bam-rewards"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-bam-rewards"
+      }
+    ]
+  },
+  {
+    "page": "features-dca",
+    "viewport": "mobile",
+    "similarity": 86.6,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 17.0% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in features-dca page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 19.4% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in features-dca page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to features-dca page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to features-dca page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to features-dca"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to features-dca"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to features-dca"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for features-dca"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for features-dca"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for features-dca"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for features-dca"
+      }
+    ]
+  },
+  {
+    "page": "security",
+    "viewport": "mobile",
+    "similarity": 88.7,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 21.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in security page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to security page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to security page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to security"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to security"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for security"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for security"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for security"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for security"
+      }
+    ]
+  },
+  {
+    "page": "team",
+    "viewport": "mobile",
+    "similarity": 80,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 16.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in team page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 23.7% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in team page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 27.7% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in team page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to team page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to team page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to team"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to team"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to team"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for team"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for team"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for team"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for team"
+      }
+    ]
+  },
+  {
+    "page": "blog",
+    "viewport": "mobile",
+    "similarity": 74.4,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 18.5% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in blog page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 33.9% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in blog page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "content band has 33.5% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '226 - Iran, Morgan Stanley, a $10M Fine & Jonno's back' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to blog page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 '225 - Ceasefires, Scams & Quantum Chaos' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to blog page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 '220 - The $65K Test - Conspiracy, Congress & Cheap Bitcoin' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 '219 - Hassan Ahmed: The Man Scaling Coinbase Across Southeast Asia' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to blog page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo post' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo post' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to blog"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for blog"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for blog"
+      }
+    ]
+  },
+  {
+    "page": "podcast",
+    "viewport": "mobile",
+    "similarity": 74.2,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 18.4% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in podcast page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 31.1% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in podcast page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 28.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in podcast page"
+      },
+      {
+        "type": "region_diff",
+        "region": "pre-footer",
+        "severity": "medium",
+        "description": "pre-footer band has 28.1% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review pre-footer section layout in podcast page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 'Iran, Morgan Stanley, a $10M Fine & Jonno's back!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to podcast page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 'Ceasefires, Scams & Quantum Chaos' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to podcast page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H3 'Power, Policy & the Future of Markets with David Menz' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H3 heading to podcast page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 'Bitcoin’s Brutal Week, MegaETH & Canberra Talks Reserves' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on podcast"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 'When Bitcoin, Saylor and Politics Collide' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on podcast"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H3 'Memes, Hacks & AI This Week In Crypto' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H3 heading is intentional on podcast"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to podcast page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to podcast page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to podcast"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to podcast"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to podcast"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for podcast"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for podcast"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for podcast"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for podcast"
+      }
+    ]
+  },
+  {
+    "page": "partners",
+    "viewport": "mobile",
+    "similarity": 65.2,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 83.3% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in partners page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "content band has 37.8% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in partners page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H2 'Don’t miss out on Australia’s most exciting crypto partner program.' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H2 heading to partners page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H2 'Don't miss out on Australia's most exciting crypto partner program.' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H2 heading is intentional on partners"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to partners page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to partners page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to partners"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to partners"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to partners"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for partners"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for partners"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for partners"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for partners"
+      }
+    ]
+  },
+  {
+    "page": "smsf",
+    "viewport": "mobile",
+    "similarity": 86.3,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 17.9% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in smsf page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 18.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in smsf page"
+      },
+      {
+        "type": "region_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "content band has 15.4% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review content section layout in smsf page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to smsf page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to smsf page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to smsf"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to smsf"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for smsf"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for smsf"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for smsf"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for smsf"
+      }
+    ]
+  },
+  {
+    "page": "support",
+    "viewport": "mobile",
+    "similarity": 89.7,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "nav band has 18.0% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in support page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to support page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to support page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to support"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to support"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to support"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for support"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for support"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for support"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for support"
+      }
+    ]
+  },
+  {
+    "page": "invest",
+    "viewport": "mobile",
+    "similarity": 84.9,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "high",
+        "description": "nav band has 36.6% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in invest page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "high",
+        "description": "hero band has 31.2% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in invest page"
+      },
+      {
+        "type": "region_diff",
+        "region": "pre-footer",
+        "severity": "medium",
+        "description": "pre-footer band has 16.6% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review pre-footer section layout in invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to invest page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to invest"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to invest"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for invest"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for invest"
+      }
+    ]
+  },
+  {
+    "page": "gold-silver",
+    "viewport": "mobile",
+    "similarity": 84.8,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "high",
+        "description": "nav band has 35.9% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in gold-silver page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 17.5% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in gold-silver page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "H2 'Gold and Silver Standard are our time-tested precious metal investment options. ' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing H2 heading to gold-silver page content"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "low",
+        "description": "H2 'Gold and Silver Standard are our time-tested precious metal investment options. ' is new on new site (not in old)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Verify new H2 heading is intentional on gold-silver"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to gold-silver page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to gold-silver page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to gold-silver"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to gold-silver"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to gold-silver"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for gold-silver"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for gold-silver"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for gold-silver"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for gold-silver"
+      }
+    ]
+  },
+  {
+    "page": "bitcoin-ethereum",
+    "viewport": "mobile",
+    "similarity": 84.8,
+    "issues": [
+      {
+        "type": "region_diff",
+        "region": "nav",
+        "severity": "high",
+        "description": "nav band has 38.3% diff pixel density — significant layout change",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review nav section layout in bitcoin-ethereum page"
+      },
+      {
+        "type": "region_diff",
+        "region": "hero",
+        "severity": "medium",
+        "description": "hero band has 16.2% diff pixel density — noticeable differences",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Review hero section layout in bitcoin-ethereum page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "nav",
+        "severity": "medium",
+        "description": "Nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9da' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing nav link '<picture><source type=\"image/webp\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/c20b3/us_flag.webp 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/db2f7/us_flag.webp 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/de8ac/us_flag.webp 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/bf0ce/us_flag.webp 48w\" sizes=\"(min-width: 24px) 24px, 100vw\"/><img width=\"24\" height=\"24\" data-main-image=\"\" style=\"object-fit:cover;object-position:0% 0%;opacity:0\" sizes=\"(min-width: 24px) 24px, 100vw\" decoding=\"async\" loading=\"lazy\" src=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png\" srcset=\"/static/dec05c9daa41bd3956b7662fd68bc5fa/12140/us_flag.png 6w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/2ae61/us_flag.png 12w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/a3e8b/us_flag.png 24w,\n/static/dec05c9daa41bd3956b7662fd68bc5fa/f5c2b/us_flag.png 48w\" alt=\"us country flag\"/></picture>us' to site navigation"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button '✕' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA '✕' to bitcoin-ethereum page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "high",
+        "description": "CTA button 'bdow!' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing CTA 'bdow!' to bitcoin-ethereum page"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo CryptoCurios Podcast logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo CryptoCurios Podcast logo' to bitcoin-ethereum"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Bamboo partner Blockchain Australia Stacked logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Bamboo partner Blockchain Australia Stacked logo' to bitcoin-ethereum"
+      },
+      {
+        "type": "dom_diff",
+        "region": "content",
+        "severity": "medium",
+        "description": "Image 'Fintech Australia logo' missing on new site",
+        "fix_tag": "👷 Dev required",
+        "fix_hint": "Add missing image with alt 'Fintech Australia logo' to bitcoin-ethereum"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button background-color changed: rgba(0, 0, 0, 0) → rgb(0, 68, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button background-color in CSS/Tailwind config for bitcoin-ethereum"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button color changed: rgb(0, 23, 129) → rgb(255, 255, 255)",
+        "fix_tag": "🎨 Design decision",
+        "fix_hint": "Update button color in CSS/Tailwind config for bitcoin-ethereum"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button font-size changed: 20px → 16px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button font-size in CSS/Tailwind config for bitcoin-ethereum"
+      },
+      {
+        "type": "css_diff",
+        "region": "hero",
+        "severity": "low",
+        "description": "button border-radius changed: 0px → 132px",
+        "fix_tag": "🤖 AI-fixable",
+        "fix_hint": "Update button border-radius in CSS/Tailwind config for bitcoin-ethereum"
+      }
+    ]
+  }
+]

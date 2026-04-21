@@ -1,0 +1,82 @@
+[
+  {
+    "name": "homepage",
+    "viewport": "desktop",
+    "similarity": 90.2,
+    "diffPixels": 1163544,
+    "width": 1440,
+    "height": 8269
+  },
+  {
+    "name": "about",
+    "viewport": "desktop",
+    "similarity": 73.5,
+    "diffPixels": 1833026,
+    "width": 1440,
+    "height": 4796
+  },
+  {
+    "name": "pricing",
+    "viewport": "desktop",
+    "similarity": 96.7,
+    "diffPixels": 75513,
+    "width": 1440,
+    "height": 1599
+  },
+  {
+    "name": "faq",
+    "viewport": "desktop",
+    "similarity": 96.9,
+    "diffPixels": 140962,
+    "width": 1440,
+    "height": 3139
+  },
+  {
+    "name": "blog",
+    "viewport": "desktop",
+    "similarity": 84,
+    "diffPixels": 1048994,
+    "width": 1440,
+    "height": 4554
+  },
+  {
+    "name": "homepage",
+    "viewport": "mobile",
+    "similarity": 88.8,
+    "diffPixels": 409606,
+    "width": 390,
+    "height": 9401
+  },
+  {
+    "name": "about",
+    "viewport": "mobile",
+    "similarity": 79,
+    "diffPixels": 383708,
+    "width": 390,
+    "height": 4687
+  },
+  {
+    "name": "pricing",
+    "viewport": "mobile",
+    "similarity": 91.7,
+    "diffPixels": 63339,
+    "width": 390,
+    "height": 1958
+  },
+  {
+    "name": "faq",
+    "viewport": "mobile",
+    "similarity": 92.8,
+    "diffPixels": 95406,
+    "width": 390,
+    "height": 3399
+  },
+  {
+    "name": "blog",
+    "viewport": "mobile",
+    "similarity": 74.4,
+    "diffPixels": 880261,
+    "width": 390,
+    "height": 8802
+  }
+]
