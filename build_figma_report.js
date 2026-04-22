@@ -29,54 +29,68 @@ function emoji(sim) {
  * and counts non-black (diff) pixels in each zone.
  * pixelmatch outputs: identical pixels as transparent/black, diff pixels as red.
  */
-function analyseDiffRegions(diffPath) {
+function analyseDiffRegions(diffPath, similarity) {
   try {
     const buf = fs.readFileSync(diffPath);
     const png = PNG.sync.read(buf);
     const { width, height, data } = png;
-    const thirdH = Math.floor(height / 3);
 
-    const zones = [
-      { name: 'Header (top)', start: 0, end: thirdH, diffCount: 0 },
-      { name: 'Body (middle)', start: thirdH, end: thirdH * 2, diffCount: 0 },
-      { name: 'Footer (bottom)', start: thirdH * 2, end: height, diffCount: 0 },
-    ];
+    // Divide into 5 vertical zones for more granular analysis
+    const zoneCount = 5;
+    const zoneH = Math.floor(height / zoneCount);
+    const zoneNames = ['Top (nav/header)', 'Upper body', 'Mid body', 'Lower body', 'Bottom (footer)'];
+    const zones = zoneNames.map((name, i) => ({ name, start: i * zoneH, end: (i+1) * zoneH, diffCount: 0 }));
+    zones[zoneCount-1].end = height; // last zone goes to end
 
     let totalDiff = 0;
     for (let y = 0; y < height; y++) {
       for (let x = 0; x < width; x++) {
         const idx = (y * width + x) * 4;
-        const r = data[idx], g = data[idx + 1], b = data[idx + 2], a = data[idx + 3];
-        // pixelmatch diff pixels are non-zero (typically red/yellow)
-        // identical pixels are rgba(0,0,0,0) or similar
+        const r = data[idx], g = data[idx+1], b = data[idx+2];
         if (r > 10 || g > 10 || b > 10) {
           totalDiff++;
           for (const zone of zones) {
-            if (y >= zone.start && y < zone.end) {
-              zone.diffCount++;
-              break;
-            }
+            if (y >= zone.start && y < zone.end) { zone.diffCount++; break; }
           }
         }
       }
     }
 
-    if (totalDiff === 0) return 'No visual differences detected';
+    if (totalDiff === 0) return { summary: 'No visual differences detected', details: [] };
 
-    // Find zones with significant diff (>15% of total diff pixels)
-    const significantZones = zones
-      .filter(z => z.diffCount / totalDiff > 0.15)
-      .sort((a, b) => b.diffCount - a.diffCount);
+    const totalPixels = width * height;
+    const diffPct = (totalDiff / totalPixels * 100).toFixed(1);
 
-    if (significantZones.length === 0) return 'Differences evenly distributed';
+    // Find zones with notable differences
+    const notable = zones
+      .filter(z => z.diffCount / totalDiff > 0.10)
+      .sort((a, b) => b.diffCount - a.diffCount)
+      .map(z => {
+        const pct = Math.round(z.diffCount / totalDiff * 100);
+        const zoneDiffPct = (z.diffCount / (zoneH * width) * 100).toFixed(1);
+        return { name: z.name, pct, zoneDiffPct: parseFloat(zoneDiffPct) };
+      });
 
-    const zoneNames = significantZones.map(z => {
-      const pct = Math.round(z.diffCount / totalDiff * 100);
-      return `${z.name} (${pct}%)`;
+    // Build human-readable descriptions
+    const details = notable.map(z => {
+      let severity = '';
+      if (z.zoneDiffPct > 20) severity = 'Heavy differences';
+      else if (z.zoneDiffPct > 10) severity = 'Significant differences';
+      else if (z.zoneDiffPct > 5) severity = 'Moderate differences';
+      else severity = 'Minor differences';
+      return `${severity} in ${z.name} (${z.pct}% of all diffs)`;
     });
-    return 'Differences concentrated in: ' + zoneNames.join(', ');
+
+    // Add overall assessment
+    let overall = '';
+    if (similarity >= 90) overall = 'Mostly aligned \u2014 only cosmetic tweaks needed';
+    else if (similarity >= 80) overall = 'Layout broadly matches but spacing/colours differ';
+    else if (similarity >= 70) overall = 'Significant layout or content divergence from design';
+    else overall = 'Major rework needed to match the design';
+
+    return { summary: overall, details, diffPct };
   } catch (e) {
-    return 'Diff analysis unavailable';
+    return { summary: 'Diff analysis unavailable', details: [] };
   }
 }
 
@@ -116,11 +130,13 @@ for (const name of pageNames) {
       issuesHtml = '<div class="issue-tag skipped">Excluded — dynamic content</div>';
     } else if (r.similarity !== null) {
       const diffPath = path.join(DIFFS, 'diff_figma_' + label + '.png');
-      const regionAnalysis = analyseDiffRegions(diffPath);
-      const assessment = getAssessment(r.similarity);
+      const analysis = analyseDiffRegions(diffPath, r.similarity);
       issuesHtml = `
-        <div class="issue-region">${regionAnalysis}</div>
-        <div class="issue-assessment" style="color:${c}">${assessment}</div>
+        <div style="font-size:13px;font-weight:600;color:${c};margin-bottom:8px">${analysis.summary}</div>
+        ${analysis.diffPct ? `<div style="font-size:11px;color:#64748b;margin-bottom:8px">${analysis.diffPct}% of pixels differ</div>` : ''}
+        <ul style="margin:0;padding-left:16px;color:#94a3b8;font-size:12px;line-height:1.8">
+          ${analysis.details.map(d => `<li>${d}</li>`).join('')}
+        </ul>
       `;
     } else {
       issuesHtml = '<div class="issue-tag">Screenshots not available</div>';
@@ -169,20 +185,27 @@ const html = `<!DOCTYPE html>
   .score-table td { padding: 10px 16px; border-top: 1px solid #1e293b; }
   .score-table tr:hover td { background: #0f172a22; }
   .cards { padding: 0 32px 32px; display: flex; flex-direction: column; gap: 20px; }
-  .card { background: #1e293b; border-radius: 10px; overflow: hidden; border: 1px solid #334155; break-inside: avoid; }
-  .card-header { padding: 12px 20px; display: flex; align-items: center; gap: 12px; }
+  .card { background: #1e293b; border-radius: 10px; overflow: hidden; border: 1px solid #334155; break-inside: avoid; page-break-inside: avoid; page-break-before: auto; }
+  .card-header { padding: 12px 20px; display: flex; align-items: center; gap: 12px; page-break-after: avoid; }
   .page-name { font-weight: 700; font-size: 15px; }
   .score { font-weight: 700; font-size: 15px; margin-left: auto; }
   .screenshots { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; gap: 1px; background: #334155; }
   .col { background: #0f172a; padding: 10px; }
   .col-label { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: .05em; margin-bottom: 6px; }
-  .col img { width: 100%; height: auto; border-radius: 4px; display: block; }
+  .col img { width: 100%; height: auto; max-height: none; border-radius: 4px; display: block; }
   .issues-col { display: flex; flex-direction: column; }
   .issues-content { flex: 1; display: flex; flex-direction: column; gap: 10px; padding: 8px 0; font-size: 13px; line-height: 1.5; }
   .issue-region { color: #94a3b8; font-size: 12px; }
   .issue-assessment { font-weight: 600; font-size: 13px; margin-top: 4px; }
   .issue-tag { color: #64748b; font-style: italic; font-size: 12px; }
   .issue-tag.skipped { color: #94a3b8; }
+
+  @media print {
+    .card { break-inside: avoid; page-break-inside: avoid; margin-bottom: 20px; }
+    .screenshots { break-inside: avoid; }
+    .col img { max-width: 100%; page-break-inside: avoid; }
+    body { background: #0f172a; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  }
 </style>
 </head>
 <body>

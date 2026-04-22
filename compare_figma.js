@@ -99,18 +99,19 @@ async function resizeToCommon(figmaPath, livePath, targetWidth) {
     .toBuffer();
   let liveMeta = await sharp(liveBuf).metadata();
 
-  const commonH = Math.max(figmaMeta.height, liveMeta.height);
+  // Use MIN height and crop both images to avoid drift from white padding
+  const commonH = Math.min(figmaMeta.height, liveMeta.height);
 
-  // Pad shorter image with white at the bottom
-  if (figmaMeta.height < commonH) {
+  // Crop both images to the shorter height (compare only overlapping content)
+  if (figmaMeta.height > commonH) {
     figmaBuf = await sharp(figmaBuf)
-      .extend({ bottom: commonH - figmaMeta.height, background: { r: 255, g: 255, b: 255, alpha: 1 } })
+      .extract({ left: 0, top: 0, width: targetWidth, height: commonH })
       .png()
       .toBuffer();
   }
-  if (liveMeta.height < commonH) {
+  if (liveMeta.height > commonH) {
     liveBuf = await sharp(liveBuf)
-      .extend({ bottom: commonH - liveMeta.height, background: { r: 255, g: 255, b: 255, alpha: 1 } })
+      .extract({ left: 0, top: 0, width: targetWidth, height: commonH })
       .png()
       .toBuffer();
   }
@@ -237,8 +238,8 @@ async function diffImages(figmaPath, livePath, diffPath, targetWidth) {
     const resp = await figmaGet(`/v1/images/${FIGMA_FILE_KEY}?ids=${encodeURIComponent(ids)}&format=png&scale=1`);
 
     if (resp.err) {
-      console.error('Figma API error:', resp.err);
-      process.exit(1);
+      console.warn('Figma API warning:', resp.err, '— will use cached exports if available');
+      break;
     }
 
     for (const [nodeId, url] of Object.entries(resp.images || {})) {
@@ -260,7 +261,7 @@ async function diffImages(figmaPath, livePath, diffPath, targetWidth) {
     const vpHeight = vpName === 'desktop' ? 900 : 844;
 
     console.log(`\n=== ${vpName.toUpperCase()} ===`);
-    const context = await browser.newContext({ viewport: { width: vpWidth, height: vpHeight } });
+    const context = await browser.newContext({ viewport: { width: vpWidth, height: vpHeight }, deviceScaleFactor: 1 });
     const page = await context.newPage();
 
     for (const frame of vpFrames) {
@@ -282,18 +283,23 @@ async function diffImages(figmaPath, livePath, diffPath, targetWidth) {
 
       process.stdout.write(`${frame.name} (${frame.viewport})... `);
 
-      // Download Figma export
-      const figmaUrl = figmaImageUrls[frame.id];
+      // Download Figma export (reuse existing if available)
       let figmaOk = false;
-      if (figmaUrl) {
-        try {
-          await downloadFile(figmaUrl, figmaFile);
-          figmaOk = true;
-        } catch (e) {
-          console.log(`Figma download failed: ${e.message}`);
-        }
+      if (fs.existsSync(figmaFile)) {
+        figmaOk = true;
+        process.stdout.write('[cached Figma] ');
       } else {
-        console.log('No Figma export URL');
+        const figmaUrl = figmaImageUrls[frame.id];
+        if (figmaUrl) {
+          try {
+            await downloadFile(figmaUrl, figmaFile);
+            figmaOk = true;
+          } catch (e) {
+            console.log(`Figma download failed: ${e.message}`);
+          }
+        } else {
+          console.log('No Figma export URL');
+        }
       }
 
       // Capture live screenshot

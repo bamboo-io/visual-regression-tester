@@ -5,7 +5,7 @@
     "viewport": "desktop",
     "figmaNodeId": "6203:56091",
     "similarity": 89.3,
-    "diffPixels": 1233987,
+    "diffPixels": 1234027,
     "width": 1440,
     "height": 7999
   },
@@ -34,10 +34,10 @@
     "name": "features-topups",
     "viewport": "desktop",
     "figmaNodeId": "1243:20886",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 92.8,
+    "diffPixels": 695711,
+    "width": 1440,
+    "height": 6755
   },
   {
     "route": "/features/portfolio",
@@ -54,10 +54,10 @@
     "name": "features-dca",
     "viewport": "desktop",
     "figmaNodeId": "1243:25021",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 93.5,
+    "diffPixels": 642278,
+    "width": 1440,
+    "height": 6877
   },
   {
     "route": "/features/bam-rewards",
@@ -104,10 +104,10 @@
     "name": "security",
     "viewport": "desktop",
     "figmaNodeId": "1244:120174",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 89.1,
+    "diffPixels": 832449,
+    "width": 1440,
+    "height": 5280
   },
   {
     "route": "/waitlist",
@@ -187,7 +187,7 @@
     "viewport": "desktop",
     "figmaNodeId": "1250:66823",
     "similarity": 87.3,
-    "diffPixels": 1395876,
+    "diffPixels": 1397533,
     "width": 1440,
     "height": 7639
   },
@@ -197,7 +197,7 @@
     "viewport": "mobile",
     "figmaNodeId": "6207:89967",
     "similarity": 81.2,
-    "diffPixels": 653473,
+    "diffPixels": 653121,
     "width": 375,
     "height": 9271
   },
@@ -226,10 +226,10 @@
     "name": "features-topups",
     "viewport": "mobile",
     "figmaNodeId": "1243:20896",
-    "similarity": null,
-    "diffPixels": 0,
-    "width": 0,
-    "height": 0
+    "similarity": 81.6,
+    "diffPixels": 523207,
+    "width": 375,
+    "height": 7564
   },
   {
     "route": "/features/portfolio",
@@ -276,8 +276,8 @@
     "name": "smsf",
     "viewport": "mobile",
     "figmaNodeId": "1243:29262",
-    "similarity": 85.5,
-    "diffPixels": 577387,
+    "similarity": 85.6,
+    "diffPixels": 576409,
     "width": 375,
     "height": 10638
   },
@@ -296,8 +296,8 @@
     "name": "security",
     "viewport": "mobile",
     "figmaNodeId": "1244:120187",
-    "similarity": 83.8,
-    "diffPixels": 414898,
+    "similarity": 84,
+    "diffPixels": 410330,
     "width": 375,
     "height": 6849
   },
@@ -378,9 +378,9 @@
     "name": "partners",
     "viewport": "mobile",
     "figmaNodeId": "1250:66830",
-    "similarity": 74,
-    "diffPixels": 760847,
+    "similarity": 73.5,
+    "diffPixels": 758848,
     "width": 375,
-    "height": 7801
+    "height": 7628
   }
 ]

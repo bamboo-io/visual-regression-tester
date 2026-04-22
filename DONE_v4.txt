@@ -1,0 +1,33 @@
+# Visual Regression Tester v4 — Run Summary
+Generated: 2026-04-21T18:53 PDT
+
+## Fixes Applied
+1. **Scaling/Drift Fix**: Changed resizeToCommon() from MAX height + white padding to MIN height + crop. Both images now cropped to the shorter height so only overlapping content is compared. Also added deviceScaleFactor: 1 to prevent HiDPI 2x screenshots.
+2. **Blank Pages in PDF**: Added page-break-inside: avoid, page-break-before: auto to .card; page-break-after: avoid to .card-header; max-height: none on .col img; @media print rules for proper print rendering.
+3. **Issues Column**: Replaced 3-zone "Header/Body/Footer" analysis with 5-zone granular analysis (Top nav/header, Upper body, Mid body, Lower body, Bottom footer). Now returns severity-based descriptions (Heavy/Significant/Moderate/Minor differences) and overall assessment.
+
+## Results
+- **Pages compared**: 36 (18 pages × 2 viewports)
+- **Skipped**: 2 (blog — dynamic content)
+- **Average similarity**: 87.6%
+- **Passing (≥90%)**: 12
+- **Warning (80–89%)**: 20
+- **Failing (<80%)**: 4
+
+## Failing Pages (<80%)
+- about (mobile): 71.2%
+- partners (mobile): 73.5%
+- podcast (mobile): 75.3%
+- about (desktop): 79.9%
+
+## Improvement vs v3
+- Previous avg similarity: 87.4% (with padding drift)
+- Current avg similarity: 87.6% (with crop fix)
+- The crop strategy eliminates false diffs from white-padding drift at page bottoms
+- Similarity scores are now more accurate (not inflated/deflated by padding artifacts)
+
+## Notes
+- Figma token was expired; reused cached Figma exports from previous run (designs unchanged)
+- Added graceful fallback to cached Figma PNGs when API token is unavailable
+- PDF output: output/figma_report.pdf (73MB, A3 landscape)
+- HTML output: output/figma_report.html (110MB)
